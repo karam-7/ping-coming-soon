@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 80vh;
+    min-width: 1300px;
+    font-family: "Libre Franklin";
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======================== Star Main Area ================ */
+
+.site {
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.site-h1{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 35px;
+    font-style: normal;
+    color: hsl(0, 0%, 59%);  
+    margin: 30px auto;
+}
+
+.site-h1>span{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.site-para{
+    font-size: 1.2rem;
+    color: hsl(209, 33%, 12%);
+    font-style: normal;
+    font-weight: 300;  
+}
+
+.site-form{
+    margin-top: 30px;    
+}
+
+#add{
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 30%;
+    outline: hsl(0, 0%, 59%);
+}
+
+.btn{
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 10%;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 5px 10px hsla(223, 100%, 88%, 0.61);
+}
+
+.mail-para{
+    font-size: 1rem;
+    color: hsl(354, 100%, 66%);
+    font-style: normal;
+    font-weight: 300;  
+    margin-top: 15px; 
+    margin-right: 260px;
+    display: none;
+}
+
+.site-img{
+    margin-top: 90px;
+    width: 60%;
+}
+
+.social{
+    margin-top: 50px;
+}
+
+#icon{
+    color:  hsl(223, 87%, 63%);
+    margin-right: 20px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#icon:hover{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+}
+
+.copy{
+    margin-top: 20px;
+    color: hsl(0, 0%, 59%);
+}
+
+  /* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: hsl(71, 73%, 54%);
+    justify-content: center;
+    background-color: black;
+    padding: 5px;
+    margin-top: 70px;
+  }
+  
+.foot a {
+    color: hsl(179, 62%, 43%);
+    text-decoration: none;
+}
+  
+  
+  /* ======================== End Footer Area ================ */
+  
+  /* ======================== Start Media Querry Area ================ */
+
+@media screen and (max-width: 768px) {
+    body{
+        min-width: 786px;
+        min-height: 100%;
+    }
+
+    .site-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #add, .btn{
+       width: 80%; 
+    }
+
+    .btn{
+        margin-top: 50px;
+    }
+
+    .mail-para{
+        margin-top: -80px;
+        margin-right: 0px;
+        margin-left: -300px;
+    }
+
+    .site-img{
+        width: 90%;
+        margin-top: 150px;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    body{
+        min-width: 375px;
+    }
+
+    .site{
+        padding: 10px;
+    }
+
+    .mail-para{
+        margin-left: 0px;
+    }
+
+    .site-h1{
+        font-size: 1.6rem;
+    }
+}
+
+  /* ======================== End Media Querry Area ================ */
